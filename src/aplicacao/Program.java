@@ -5,12 +5,17 @@
  */
 package aplicacao;
 
+import xadrez.CombinacoesXadrez;
+
 /**
  *
  * @author Alkanet
  */
 public class Program {
     public static void main(String []args){
+        
+        CombinacoesXadrez combinacoes = new CombinacoesXadrez();
+        UI.imprimirTabuleiro(combinacoes.getPecas());
         
     }
     

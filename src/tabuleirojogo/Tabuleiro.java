@@ -47,4 +47,10 @@ public class Tabuleiro {
     public void setColunas(int colunas) {
         this.colunas = colunas;
     }
+    public Peca pecas(int linhas, int colunas){
+        return pecas[linhas][colunas];
+    }
+    public Peca pecas(Posicao posicao){
+        return pecas[posicao.getLinha()][posicao.getColuna()];
+    }
 }
