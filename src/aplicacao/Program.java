@@ -5,7 +5,7 @@
  */
 package aplicacao;
 
-import xadrez.CombinacoesXadrez;
+import xadrez.PartidaDeXadrez;
 
 /**
  *
@@ -14,7 +14,7 @@ import xadrez.CombinacoesXadrez;
 public class Program {
     public static void main(String []args){
         
-        CombinacoesXadrez combinacoes = new CombinacoesXadrez();
+        PartidaDeXadrez combinacoes = new PartidaDeXadrez();
         UI.imprimirTabuleiro(combinacoes.getPecas());
         
     }
