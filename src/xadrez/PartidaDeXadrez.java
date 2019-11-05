@@ -30,10 +30,14 @@ public class PartidaDeXadrez {
         }
         return mat;
     }
+    private void colocarNovaPeca(char coluna, int peca, PecasXadrez pecas){
+        tabuleiro.ColocarPeca(pecas, new XadrezPosicao(coluna, peca).Posicionar());
+        
+    }
     private void IniciarConfiguracao(){
-        tabuleiro.ColocarPeca(new Torre(tabuleiro, Color.BRANCO), new Posicao(2,1));
-        tabuleiro.ColocarPeca(new Rei(tabuleiro, Color.PRETO), new Posicao(0,4));
-        tabuleiro.ColocarPeca(new Rei(tabuleiro, Color.BRANCO), new Posicao(7,4));
+        colocarNovaPeca('b',6,new Torre(tabuleiro, Color.BRANCO));
+        colocarNovaPeca('e',8,new Rei(tabuleiro, Color.PRETO));
+        colocarNovaPeca('e',1,new Rei(tabuleiro, Color.BRANCO));
     }
     
 }
